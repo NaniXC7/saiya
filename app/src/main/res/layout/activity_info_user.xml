@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coach"
+    tools:context=".InfoUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="65dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="ELIJE A TU ENTRENADOR DE HOY"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/c1"
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:background="#BFFFFFFF"
+                android:text="Baki Hanma"
+                app:cornerRadius="100dp"
+                app:strokeColor="#0487f6"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/c2"
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:background="#BFFFFFFF"
+                android:text="Satori Goujo"
+                app:cornerRadius="100dp"
+                app:strokeColor="#0487f6"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/c3"
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:background="#BFFFFFFF"
+                android:text="Rock Lee"
+                app:cornerRadius="100dp"
+                app:strokeColor="#0487f6"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/c4"
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:background="#BFFFFFFF"
+                android:text="El Cuto"
+                app:cornerRadius="100dp"
+                app:strokeColor="#0487f6"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/c5"
+                android:layout_width="125dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:background="#BFFFFFFF"
+                android:text="El Enjutado"
+                app:cornerRadius="100dp"
+                app:strokeColor="#0487f6"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="293dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cerrarsesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SingOut"
+                app:cornerRadius="20dp"
+                app:strokeColor="#BE512B"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_avances.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_coaching2.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_create_user.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_datos_usuario.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_info_user.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_primeras_medidas_user.xml" value="0.22" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_ruti.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_rutinas.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_usuario.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/activity_ver_avances.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/content_rutinas.xml" value="0.1068840579710145" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/entrenadores.xml" value="0.13269927536231885" />
+        <entry key="..\:/Users/NaniXC7/AndroidStudioProjects/SaiyaGym/app/src/main/res/layout/list_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

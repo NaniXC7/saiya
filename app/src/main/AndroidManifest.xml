@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saiyagym">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SaiyaGym">
+        <activity
+            android:name=".Ruti"
+            android:exported="false" />
+        <activity
+            android:name=".VerAvances"
+            android:exported="false" />
+        <activity
+            android:name=".Nutricion"
+            android:exported="false" />
+        <activity
+            android:name=".Avances"
+            android:exported="false" />
+        <activity
+            android:name=".Coaching"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUser$Coaching"
+            android:exported="false" />
+        <activity
+            android:name=".Usuario"
+            android:exported="false"
+            android:label="@string/title_activity_usuario" />
+        <activity
+            android:name=".PrimerasMedidasUser"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUser"
+            android:exported="true" />
+        <activity
+            android:name=".InfoUser"
+            android:exported="true" />
+        <activity
+            android:name=".DatosUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".IniciarSesionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
