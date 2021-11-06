@@ -17,10 +17,8 @@ public class Rutinas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rutinas);
 
-        combodias = findViewById(R.id.spinerdias);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.combo_dias,
-                android.R.layout.simple_spinner_item);
+
     }
 
     public void regresar(View view){
