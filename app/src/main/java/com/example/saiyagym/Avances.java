@@ -55,20 +55,31 @@ public class Avances extends AppCompatActivity {
                 Pantorrilla = pantorria.getText().toString().trim();
                 PesoActual = pesoactual.getText().toString().trim();
 
+                if(Brazo.equals("") || Abdomen.equals("") || Pecho.equals("") || Pierna.equals("") || Gluteo.equals("") || Pantorrilla.equals("") || PesoActual.equals("")){
 
-                String iD = mAuth.getCurrentUser().getUid();
-                Map<String,Object> map3 = new HashMap<>();
-                map3.put("Mbrazo", Brazo);
-                map3.put("Mpecho", Pecho);
-                map3.put("Mabdomen", Abdomen);
-                map3.put("Mpierna", Pierna);
-                map3.put("Mgluteo", Gluteo);
-                map3.put("Mpantorrilla", Pantorrilla);
-                map3.put("Mpesoactual", PesoActual);
+                    Toast.makeText(getApplicationContext(), "Todos los campos son requeridos", Toast.LENGTH_SHORT).show();
 
-                mDatabase.child("Users").child(iD).updateChildren(map3);
 
-                Toast.makeText(getApplicationContext(), "Medidas Actualizadas Correctamente", Toast.LENGTH_SHORT).show();
+                }else{
+
+                    String iD = mAuth.getCurrentUser().getUid();
+                    Map<String,Object> map3 = new HashMap<>();
+                    map3.put("Mbrazo", Brazo);
+                    map3.put("Mpecho", Pecho);
+                    map3.put("Mabdomen", Abdomen);
+                    map3.put("Mpierna", Pierna);
+                    map3.put("Mgluteo", Gluteo);
+                    map3.put("Mpantorrilla", Pantorrilla);
+                    map3.put("Mpesoactual", PesoActual);
+
+                    mDatabase.child("Users").child(iD).updateChildren(map3);
+
+                    Toast.makeText(getApplicationContext(), "Medidas Actualizadas Correctamente", Toast.LENGTH_SHORT).show();
+
+
+                }
+
+
 
 
             }

@@ -4,6 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/aliment"
     tools:context=".Nutricion">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back"
+                android:onClick="regresar" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Lunes"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Lunes" />
+
+            <Button
+                android:id="@+id/Martes"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Martes" />
+
+            <Button
+                android:id="@+id/Miercoles"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Miercoles" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Jueves"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Jueves" />
+
+            <Button
+                android:id="@+id/Viernes"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Viernes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ruti1"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#80000000"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ruti2"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#80000000"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ruti3"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#80000000"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ruti4"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ruti5"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -84,7 +84,7 @@ public class Ruti extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(), "Día Lunes | Bíceps", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Día Jueves | Bíceps", Toast.LENGTH_SHORT).show();
 
                 ruti1.setText("Curl Concentrado | 4 Series X12 repeticiones");
                 ruti2.setText("Predicador | 4 Series X12 repeticiones");
@@ -99,7 +99,7 @@ public class Ruti extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(), "Día Lunes | Tríceps", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Día Viernes | Tríceps", Toast.LENGTH_SHORT).show();
 
                 ruti1.setText("Patada de Tríceps | 4 Series X12 repeticiones");
                 ruti2.setText("Copa | 4 Series X15 repeticiones");

@@ -42,6 +42,8 @@ public class PrimerasMedidasUser extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
+
+
         btnregistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,23 +60,32 @@ public class PrimerasMedidasUser extends AppCompatActivity {
                 PesoMeta = pesofinal.getText().toString().trim();
 
 
-                String iD = mAuth.getCurrentUser().getUid();
-                Map<String,Object> map2 = new HashMap<>();
-                map2.put("Mbrazo", Brazo);
-                map2.put("Mpecho", Pecho);
-                map2.put("Mabdomen", Abdomen);
-                map2.put("Mpierna", Pierna);
-                map2.put("Mgluteo", Gluteo);
-                map2.put("Mpantorrilla", Pantorrilla);
-                map2.put("MpesoInicial", PesoInicial);
-                map2.put("MpesoMeta", PesoMeta);
+                if(Brazo.equals("") || Abdomen.equals("") || Pecho.equals("") || Pierna.equals("") || Gluteo.equals("") || Pantorrilla.equals("") || PesoInicial.equals("") || PesoMeta.equals("")){
 
-                mDatabase.child("Users").child(iD).updateChildren(map2);
+                    Toast.makeText(getApplicationContext(), "Todos los campos son requeridos", Toast.LENGTH_SHORT).show();
 
-                Toast.makeText(getApplicationContext(), "Cuenta Registrada Exitosamente", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), IniciarSesionActivity.class);
-                startActivity(i);
+                }else{
+
+                    String iD = mAuth.getCurrentUser().getUid();
+                    Map<String,Object> map2 = new HashMap<>();
+                    map2.put("Mbrazo", Brazo);
+                    map2.put("Mpecho", Pecho);
+                    map2.put("Mabdomen", Abdomen);
+                    map2.put("Mpierna", Pierna);
+                    map2.put("Mgluteo", Gluteo);
+                    map2.put("Mpantorrilla", Pantorrilla);
+                    map2.put("MpesoInicial", PesoInicial);
+                    map2.put("MpesoMeta", PesoMeta);
+
+                    mDatabase.child("Users").child(iD).updateChildren(map2);
+
+                    Toast.makeText(getApplicationContext(), "Cuenta Registrada Exitosamente", Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(getApplicationContext(), IniciarSesionActivity.class);
+                    startActivity(i);
+
+                }
 
 
             }

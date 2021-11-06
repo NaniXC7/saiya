@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/centro"
     tools:context=".Coaching">
 
     <LinearLayout
@@ -85,10 +86,28 @@
                 android:id="@+id/nutricion"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
+                android:onClick="nutricion"
                 android:text="ver plan de nutricion"
                 app:cornerRadius="20dp"
                 app:strokeColor="#BE512B"
                 app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cerrarsesion"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Cerrar Sesion"
+                app:cornerRadius="20dp"
+                app:strokeColor="#BE512B"
+                app:strokeWidth="2dp" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

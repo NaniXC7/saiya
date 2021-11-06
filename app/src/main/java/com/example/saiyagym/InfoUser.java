@@ -136,23 +136,7 @@ public class InfoUser<binding> extends AppCompatActivity {
             }
         });
 
-        cerrarsesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(), "Cerrando Sesion", Toast.LENGTH_SHORT).show();
-
-                mAuth.signOut();
-                startActivity(new Intent(getApplicationContext(), IniciarSesionActivity.class));
-                finish();
-
-                Toast.makeText(getApplicationContext(), "Sesion Finalizada", Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(), "El dolor que sientes hoy es la fuerza que tendrás mañana", Toast.LENGTH_SHORT).show();
-
-
-
-            }
-        });
 
         getUserInfo();
 

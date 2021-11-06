@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -44,14 +45,22 @@ public class DatosUsuario extends AppCompatActivity {
                 name = nombre.getText().toString().trim();
                 age = edad.getText().toString().trim();
 
-                String iD = mAuth.getCurrentUser().getUid();
-                Map<String,Object> map1 = new HashMap<>();
-                map1.put("NameUser", name);
-                map1.put("AgeUser", age);
-                mDatabase.child("Users").child(iD).updateChildren(map1);
+                if(name.equals("") || age.equals("")){
 
-                startActivity(new Intent(getApplicationContext(), PrimerasMedidasUser.class));
-                finish();
+                    Toast.makeText(getApplicationContext(), "Todos los campos son requeridos", Toast.LENGTH_SHORT).show();
+
+                }else{
+
+                    String iD = mAuth.getCurrentUser().getUid();
+                    Map<String,Object> map1 = new HashMap<>();
+                    map1.put("NameUser", name);
+                    map1.put("AgeUser", age);
+                    mDatabase.child("Users").child(iD).updateChildren(map1);
+
+                    startActivity(new Intent(getApplicationContext(), PrimerasMedidasUser.class));
+                    finish();
+
+                }
 
 
             }
